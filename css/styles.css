@@ -44,3 +44,7 @@ main {
         padding: 5px;
     }
 }
+
+.emojis{
+    display: flex;
+}
