@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 header {
@@ -20,18 +23,38 @@ main {
     padding: 20px;
 }
 
+.month{
+    background: #394264;
+    border-radius: 20px;
+}
+
+.month .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 17px;
+    background-color: #3468af;
+    height: 40px;
+    margin: 0;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    color: #fff;
+}
+
 .days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     max-width: 300px;
     gap: 5px;
+    margin: 20px;
+
 }
 
 .day {
     text-align: center;
-    background-color: rgb(242, 242, 242);
+    background-color: #394264;
     padding: 10px;
-    border: 1px solid rgb(221, 221, 221);
+    color: #ffff;
 }
 
 .green{
@@ -47,4 +70,8 @@ main {
 
 .emojis{
     display: flex;
+}
+
+.blue{
+    color: #4fc4f6;
 }

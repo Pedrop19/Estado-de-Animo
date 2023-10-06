@@ -32,9 +32,12 @@ function addMonth() {
     let monthElement = document.createElement("div");
     monthElement.classList.toggle("month");
 
+    let divStyles = document.createElement('div');
+    divStyles.classList.toggle("title");
     let titleMonthElement = document.createElement("h4");
     titleMonthElement.innerText = monthNames[monthCounter - 1];
-    monthElement.appendChild(titleMonthElement);
+    divStyles.appendChild(titleMonthElement);
+    monthElement.appendChild(divStyles);
 
     let daysElement = document.createElement("div");
     daysElement.classList.toggle("days");
@@ -43,6 +46,7 @@ function addMonth() {
     daysOfWeek.forEach((day) => {
         let dayElement = document.createElement("div");
         dayElement.classList.add("day");
+        dayElement.classList.toggle("blue");
         dayElement.innerText = day;
         daysElement.appendChild(dayElement);
     });
